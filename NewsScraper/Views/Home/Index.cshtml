@@ -11,7 +11,9 @@
     @foreach(var article in Model)
     {
         <li>@article.title</li>
-        <li>@article.url</li>
+        <li>
+           <a href=@article.url>@article.url</a>
+        </li>
        <br>
     }
 </div>
